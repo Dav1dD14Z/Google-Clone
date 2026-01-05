@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./Images/Icons/Logo.png" type="image/png">
+    <link rel="stylesheet" href="./CSS/styles.css">
+    <title>Google</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="header__navbar" aria-label="Navigation navbar">
+            <ul class="header__container">
+                <li>
+                    <a class="header__link" href="gmail.com" title="Link to Gmail" target="_blank" rel="nofollow noreferrer">gmail</a>
+                </li>
+                <li>
+                    <a class="header__link" href="images.com" title="Link to Google images" target="_blank" rel="nofollow noreferrer">images</a>
+                </li>
+                <li>
+                    <a class="header__link header__link--icon" href="searchlabs.com" title="Search bars" target="_blank" rel="nofollow noreferrer">
+                        <img src="./Images/Icons/Lab.png" alt="" width="18px" height="18px"">
+                    </a>
+                </li>
+                <li>
+                    <a class="header__link header__link--icon" href="googleapps.com" title="Google apps" target="_blank" rel="noreferrer nofollow">
+                        <img src="./Images/Icons/Menu.png" alt="Google apps link" width="18px" height="18px"">
+                    </a>
+                </li>
+                <li>
+                    <a class="header__link header__link--image" href="google.com" title="Google Profile" target="_blank" rel="noreferrer nofollow">
+                        <img src="https://images.pexels.com/users/avatars/939242602/david-diaz-875.jpg?auto=compress&fit=crop&h=50&w=50&dpr=2" width="32px" height="32px" alt="Profile picture" loading="lazy" decoding="async">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <figure class="hero__imageContainer">
+                <img src="./Images/Google.png" alt="Logo of Google" width="100%" height="100%" loading="lazy" decoding="async">
+            </figure>
+            <form class="hero__form">
+                <input class="hero__input" type="text" name="text" id="text" title="Search and type at least 5 characters" pattern="[A-Za-z0-9  ]{5,20}" aria-label="Google search-bar" required>
+                <img class="hero__image hero__image--add" src="./Images/Icons/Add.png" alt="add" width="100%" height="100%">
+            </form>
+            <div class="hero__linksContainer">
+                <a href="#" class="hero__link hero__link--disabled">search with google</a>
+                <a href="https://doodles.google/" class="hero__link hero__link--active">be lucky</a>
+            </div>
+            <p class="hero__description">Google is available in: <a href="#">English (United States)</a></p>
+        </section>
+    </main>
+</body>
+</html>
