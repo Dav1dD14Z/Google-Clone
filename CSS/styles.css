@@ -4,6 +4,10 @@
     --bg-light: #5F6368;
     --bg-active: #4D5156;
     --font-color: white; 
+    --red: red;
+    --yellow: rgb(255,231,0);
+    --blue: rgb(0,149,255);
+    --green: green;
 }
 
 * {
@@ -89,10 +93,10 @@ body {
     border: 3px solid;
     border-radius: 100%;
     box-sizing: content-box;
-    border-top-color: red;
-    border-left-color: rgb(255, 213, 0);
-    border-right-color: rgb(0, 149, 255);
-    border-bottom-color: green;
+    border-top-color: var(--red);
+    border-left-color: var(--yellow);
+    border-right-color: var(--blue);
+    border-bottom-color: var(--green);
 }
 
 .header__link--image:hover img,
@@ -163,6 +167,16 @@ body {
     background-color: transparent;
     transition: background-color 0.3s ease;
 }
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
 .hero__button--add {
     left: 0.6rem;
 }
@@ -170,6 +184,7 @@ body {
 .hero__button--add:hover,
 .hero__button--add:focus-within {
     background-color: var(--bg-dark);
+    animation: rotate 0.5s linear 0.1s;
 }
 
 .hero__image {
@@ -191,16 +206,30 @@ body {
     position: relative;
 }
 
+@keyframes rainbow {
+    0% { 
+        filter: hue-rotate(0deg); 
+    }
+    100% { 
+        filter: hue-rotate(360deg); 
+    }
+}
+
 .hero__button--ai {
     width: 60%;
     position: relative;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin-inline-end: 0.6rem;
-    border: 1px solid white;
+    margin-inline-end: 0.6rem;;
+    border: 1px solid;
     border-radius: 20px;
     color: white;
+    animation: rainbow 1s linear infinite;
+    border-top-color: var(--red);
+    border-left-color: var(--yellow);
+    border-right-color: var(--blue);
+    border-bottom-color: var(--green);
 }
 
 .hero__image--secondary {
