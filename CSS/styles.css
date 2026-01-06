@@ -65,7 +65,7 @@ body {
 }
 
 .header__link--icon:hover,
-.header__link--icon:focus-within {
+.header__link--icon:focus {
     text-decoration: none;
     background-color: var(--bg-dark);
 }
@@ -96,7 +96,7 @@ body {
 }
 
 .header__link--image:hover img,
-.header__link--image:focus-within img {
+.header__link--image:focus img {
     opacity: 0.7;
 }
 
@@ -145,7 +145,7 @@ body {
 }
 
 .hero__input:hover,
-.hero__input:focus-within {
+.hero__input:focus {
     background-color: var(--bg-light);
 }
 
@@ -231,7 +231,7 @@ body {
 }
 
 .hero__link:hover, 
-.hero__link:focus-within {
+.hero__link:focus {
     border-color: white;
 }
 
@@ -243,4 +243,8 @@ body {
 .hero__description a {
     text-decoration: none;
     color: #79C3FF;
+}
+
+.hero__description a:hover {
+    text-decoration: underline;
 }
