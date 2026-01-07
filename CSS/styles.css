@@ -110,7 +110,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 11rem 0;
+    padding: 10rem 0;
     gap: 1.5rem;
 }
 
@@ -225,7 +225,7 @@ body {
     border: 1px solid;
     border-radius: 20px;
     color: white;
-    animation: rainbow 1s linear infinite;
+    animation: rainbow 1.2s linear infinite;
     border-top-color: var(--red);
     border-left-color: var(--yellow);
     border-right-color: var(--blue);
@@ -276,4 +276,98 @@ body {
 
 .hero__description a:hover {
     text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: #171717;
+    font-size: 0.9rem;
+}
+
+.footer__country {
+    padding: 1rem 2rem;
+    border-bottom: 2px solid #2D2E2E;
+}
+
+.footer__information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem 2rem;
+    gap: 2rem;
+}
+
+.footer__about,
+.footer__privacy {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer__privacy {
+    justify-content: space-evenly;
+}
+
+.footer__link {
+    width: 30%;
+    max-width: 6rem;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+}
+
+.footer__link--special {
+    margin-block-start: 2rem;
+    width: 100%;
+    max-width: none;
+}
+
+.footer__link:hover,
+.footer__link:focus,
+.footer__country-text:hover, 
+.footer__country-text:focus {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+@media screen and (min-width: 550px) {
+    .footer__link--special {
+        max-width: 10rem;
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 780px) {
+    .hero {
+        padding: 11rem 0;
+    }
+
+    .footer__information {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footer__about {
+        width: 65%;
+        justify-content: space-between;
+    }
+    
+    .footer__privacy {
+        width: 25%;
+    }
+}
+
+@media screen and (min-width: 1064px) {
+    .footer__about {
+        width: 45%;
+    }
 }
