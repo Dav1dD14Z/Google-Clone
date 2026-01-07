@@ -68,8 +68,7 @@ body {
     transition: background-color 0.2s ease;
 }
 
-.header__link--icon:hover,
-.header__link--icon:focus {
+.header__link--icon:is(:hover, :focus) {
     text-decoration: none;
     background-color: var(--bg-dark);
 }
@@ -99,8 +98,7 @@ body {
     border-bottom-color: var(--green);
 }
 
-.header__link--image:hover img,
-.header__link--image:focus img {
+.header__link--image:is(:hover, :focus) img {
     opacity: 0.7;
 }
 
@@ -148,8 +146,7 @@ body {
     transition: background-color 0.3s ease;
 }
 
-.hero__input:hover,
-.hero__input:focus {
+.hero__input:is(:hover, :focus) {
     background-color: var(--bg-light);
 }
 
@@ -181,8 +178,7 @@ body {
     left: 0.6rem;
 }
 
-.hero__button--add:hover,
-.hero__button--add:focus-within {
+.hero__button--add:is(:hover, :focus-within) {
     background-color: var(--bg-dark);
     animation: rotate 0.5s linear 0.1s;
 }
@@ -329,12 +325,20 @@ body {
     max-width: none;
 }
 
-.footer__link:hover,
-.footer__link:focus,
-.footer__country-text:hover, 
-.footer__country-text:focus {
+.footer__link:is(:hover, :focus),
+.footer__country-text:is(:hover, :focus) {
     cursor: pointer;
     text-decoration: underline;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .hero__button--ai {
+        animation: none;
+    }
+    
+    .hero__button--add:is(:hover, :focus-visible) {
+        animation: none;
+    }
 }
 
 @media screen and (min-width: 550px) {
