@@ -148,6 +148,7 @@ body {
 
 .hero__input:is(:hover, :focus) {
     background-color: var(--bg-light);
+    cursor: not-allowed;
 }
 
 .hero__button {
