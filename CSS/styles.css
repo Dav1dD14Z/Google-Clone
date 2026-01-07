@@ -368,6 +368,10 @@ body {
 
 @media screen and (min-width: 1064px) {
     .footer__about {
-        width: 45%;
+        width: 40%;
+    }
+
+    .footer__privacy {
+        width: 20%;
     }
 }
